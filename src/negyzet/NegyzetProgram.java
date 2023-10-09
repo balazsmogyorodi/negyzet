@@ -8,12 +8,8 @@ public class NegyzetProgram {
     }
 
     private void feladat() {
-        Negyzet negyzet = new Negyzet();
-        Koordinata koordinata = new Koordinata();
-        negyzet.setHossz(2);
-        koordinata.setX(20);
-        koordinata.setY(30);
-
+        Koordinata k = new Koordinata(20, 30);
+        Negyzet negyzet = new Negyzet(4, k);
         System.out.println(negyzet.allapot());
     }
 
