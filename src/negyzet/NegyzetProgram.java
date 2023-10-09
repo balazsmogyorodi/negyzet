@@ -1,15 +1,19 @@
 package negyzet;
 
 public class NegyzetProgram {
-   public static Negyzet negyzet = new Negyzet();
-
-    
 
     public static void main(String[] args) {
-        System.out.println("Négyzet x kooridnátája:" + negyzet.getX() + "\nNégyzet y koordinátája:" + negyzet.getY() + "\nterülete: " + (negyzet.terulet()));
+        new NegyzetProgram().feladat();
 
-       
-       
     }
-    
+
+    private void feladat() {
+        Negyzet negyzet = new Negyzet();
+        negyzet.setHossz(-2);
+        negyzet.setX(20);
+        negyzet.setY(30);
+
+        System.out.println(negyzet.allapot());
+    }
+
 }
