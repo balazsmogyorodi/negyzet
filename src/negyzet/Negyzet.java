@@ -1,30 +1,13 @@
 package negyzet;
 
 class Negyzet {
-
-    private int x, y, hossz;
+    Koordinata koordinata = new Koordinata();
+    private int hossz;
 
     public int terulet() {
         return hossz * hossz;
     }
 
-    public int getX() {
-
-        return x;
-    }
-
-    public int getY() {
-
-        return y;
-    }
-
-    public void setX(int x) {
-        this.x = x;
-    }
-
-    public void setY(int y) {
-        this.y = y;
-    }
 
     public void setHossz(int hossz) {
         if (hossz <= 0){
@@ -35,7 +18,7 @@ class Negyzet {
 
     public String allapot(){
         String allapot = "";
-        allapot = "Négyzet x kooridnátája:" + x + "\nNégyzet y koordinátája:" + y + "\nterülete: " + terulet();
+        allapot = "Négyzet x kooridnátája:" + koordinata.getX() + "\nNégyzet y koordinátája:" + koordinata.getY() + "\nterülete: " + terulet();
 
         return allapot;
 

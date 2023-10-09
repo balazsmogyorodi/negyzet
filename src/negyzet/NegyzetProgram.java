@@ -9,9 +9,10 @@ public class NegyzetProgram {
 
     private void feladat() {
         Negyzet negyzet = new Negyzet();
-        negyzet.setHossz(-2);
-        negyzet.setX(20);
-        negyzet.setY(30);
+        Koordinata koordinata = new Koordinata();
+        negyzet.setHossz(2);
+        koordinata.setX(20);
+        koordinata.setY(30);
 
         System.out.println(negyzet.allapot());
     }
