@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 package negyzet;
 
@@ -41,5 +42,18 @@ class Negyzet {
     
     
     
+=======
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package negyzet;
+
+/**
+ *
+ * @author vegi.d.mark
+ */
+public class Negyzet {
+>>>>>>> 18baecbc9a3ea200da497b6d7c94a3ff9abece55
     
 }
