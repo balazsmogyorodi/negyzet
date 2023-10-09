@@ -1,7 +1,8 @@
 package negyzet;
+
 public class Koordinata {
-    private int x;
-    private int y;
+
+    private int x, y;
 
     public int getX() {
         return x;
@@ -18,6 +19,5 @@ public class Koordinata {
     public void setY(int y) {
         this.y = y;
     }
-    
-    
+
 }
