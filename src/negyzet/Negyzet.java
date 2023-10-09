@@ -1,27 +1,20 @@
-<<<<<<< HEAD
-
 package negyzet;
 
-
 class Negyzet {
-  private  int x, y, hossz;
-    
-    
-    
-    
-    
-    public int terulet(){
-        setHossz(2);
-        return hossz*hossz;
+
+    private int x, y, hossz;
+
+    public int terulet() {
+        return hossz * hossz;
     }
 
     public int getX() {
-        setX(5);
+
         return x;
     }
 
     public int getY() {
-        setY(9);
+
         return y;
     }
 
@@ -34,26 +27,18 @@ class Negyzet {
     }
 
     public void setHossz(int hossz) {
+        if (hossz <= 0){
+        hossz = 1;
+        }
         this.hossz = hossz;
     }
-    
-    
-       
-    
-    
-    
-=======
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package negyzet;
 
-/**
- *
- * @author vegi.d.mark
- */
-public class Negyzet {
->>>>>>> 18baecbc9a3ea200da497b6d7c94a3ff9abece55
-    
+    public String allapot(){
+        String allapot = "";
+        allapot = "Négyzet x kooridnátája:" + x + "\nNégyzet y koordinátája:" + y + "\nterülete: " + terulet();
+
+        return allapot;
+
+    }
+
 }
