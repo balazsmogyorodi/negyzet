@@ -3,9 +3,14 @@ package negyzet;
 class Negyzet {
 
     private int hossz;
+    private Koordinata kord;
 
     public int terulet() {
         return hossz * hossz;
+    }
+
+    public void setKord(Koordinata kord) {
+        this.kord = kord;
     }
 
     public void setHossz(int hossz) {
@@ -16,9 +21,6 @@ class Negyzet {
     }
 
     public String allapot() {
-        Koordinata kord = new Koordinata();
-        kord.setX(20);
-        kord.setY(30);
         String allapot = "";
         allapot = "Négyzet x kooridnátája:" + kord.getX() + "\nNégyzet y koordinátája:" + kord.getY() + "\nterülete: " + terulet();
         return allapot;
